@@ -58,12 +58,8 @@ export default {
           label: 'Entertainment',
           color: { background: colourCategory, border: colourCategory }
         },
-        {
-          id: 17,
-          label: 'Education',
-          color: { background: colourCategory, border: colourCategory }
-        },
-        { id: 18, label: 'Signal' }
+        { id: 18, label: 'Signal' },
+        { id: 19, label: 'StackOverflow' }
       ]),
       edges: new DataSet([
         { from: 1, to: 2 }, // top-level edges
@@ -78,13 +74,15 @@ export default {
         { from: 13, to: 2 },
         { from: 15, to: 2 },
         { from: 1, to: 16 }, // entertainment
-        { from: 1, to: 17 }, // education
+        { from: 1, to: 3 }, // education
         { from: 14, to: 16 },
-        { from: 14, to: 17 },
+        { from: 14, to: 3 },
         { from: 11, to: 4 },
         { from: 10, to: 16 },
-        { from: 10, to: 17 },
-        { from: 18, to: 4 }
+        { from: 10, to: 3 },
+        { from: 18, to: 4 },
+        { from: 19, to: 5 },
+        { from: 19, to: 3 }
       ])
     }
   },
