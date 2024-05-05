@@ -1,0 +1,5 @@
+[[headers]]
+  for = "/*"  # Apply headers to all pages
+  [headers.values]
+    X-Frame-Options = "ALLOW-FROM https://malat-webspace.royalroads.ca/rru297/"
+    Content-Security-Policy = "frame-ancestors 'self' https://malat-webspace.royalroads.ca/rru297/"
