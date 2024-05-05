@@ -6,6 +6,8 @@ export default {
   name: 'App',
   data() {
     const colourCategory = '#ee6352'
+    const colourCategoryOutline = '#eb4833'
+    const sizeCategory = 18
     return {
       nodes: new DataSet([
         {
@@ -29,20 +31,28 @@ export default {
         },
         {
           id: 2,
-          label: 'Social Media',
-          color: { background: colourCategory, border: colourCategory }
+          label: 'Social Media'.toUpperCase(),
+          color: { background: colourCategory, border: colourCategoryOutline },
+          font: { size: sizeCategory }
         },
         {
           id: 3,
-          label: 'Education',
-          color: { background: colourCategory, border: colourCategory }
+          label: 'Education'.toUpperCase(),
+          color: { background: colourCategory, border: colourCategoryOutline },
+          font: { size: sizeCategory }
         },
         {
           id: 4,
-          label: 'Communication',
-          color: { background: colourCategory, border: colourCategory }
+          label: 'Communication'.toUpperCase(),
+          color: { background: colourCategory, border: colourCategoryOutline },
+          font: { size: sizeCategory }
         },
-        { id: 5, label: 'Work', color: { background: colourCategory, border: colourCategory } },
+        {
+          id: 5,
+          label: 'Work'.toUpperCase(),
+          color: { background: colourCategory, border: colourCategoryOutline },
+          font: { size: sizeCategory }
+        },
         { id: 6, label: 'Posts.cv' },
         { id: 7, label: 'Reddit' },
         { id: 8, label: 'Spotify' },
@@ -55,8 +65,9 @@ export default {
         { id: 15, label: 'Bluesky' },
         {
           id: 16,
-          label: 'Entertainment',
-          color: { background: colourCategory, border: colourCategory }
+          label: 'Entertainment'.toUpperCase(),
+          color: { background: colourCategory, border: colourCategoryOutline },
+          font: { size: sizeCategory }
         },
         { id: 17, label: 'Discord' },
         { id: 18, label: 'Signal' },
@@ -99,9 +110,9 @@ export default {
         { from: 21, to: 5 }, // GitHub
         { from: 22, to: 3 }, // Coursera
         { from: 23, to: 3 }, // Udemy
-        { from: 23, to: 2 }, // Read.cv
-        { from: 23, to: 4 },
-        { from: 23, to: 5 },
+        { from: 24, to: 2 }, // Read.cv
+        { from: 24, to: 4 },
+        { from: 24, to: 5 },
         { from: 25, to: 2 }, // LinkedIn
         { from: 25, to: 4 },
         { from: 25, to: 5 }
@@ -131,7 +142,10 @@ export default {
         }
       },
       edges: {
-        color: '#7ae7c7',
+        color: {
+          color: '#eaeaea',
+          highlight: '#7ae7c7'
+        },
         width: 2
       }
     })
