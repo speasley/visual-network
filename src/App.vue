@@ -43,7 +43,7 @@ export default {
           color: { background: colourCategory, border: colourCategory }
         },
         { id: 5, label: 'Work', color: { background: colourCategory, border: colourCategory } },
-        { id: 6, label: 'Posts' },
+        { id: 6, label: 'Posts.cv' },
         { id: 7, label: 'Reddit' },
         { id: 8, label: 'Spotify' },
         { id: 9, label: 'Instagram' },
@@ -61,7 +61,12 @@ export default {
         { id: 17, label: 'Discord' },
         { id: 18, label: 'Signal' },
         { id: 19, label: 'StackOverflow' },
-        { id: 20, label: 'Royal Roads University' }
+        { id: 20, label: 'Royal Roads University' },
+        { id: 21, label: 'GitHub' },
+        { id: 22, label: 'Coursera' },
+        { id: 23, label: 'Udemy' },
+        { id: 24, label: 'Read.cv' },
+        { id: 25, label: 'LinkedIn' }
       ]),
       edges: new DataSet([
         { from: 1, to: 2 }, // social media
@@ -90,7 +95,16 @@ export default {
         { from: 18, to: 4 }, // signal
         { from: 19, to: 5 }, // StackOverflow
         { from: 19, to: 3 },
-        { from: 20, to: 3 } // RRU
+        { from: 20, to: 3 }, // RRU
+        { from: 21, to: 5 }, // GitHub
+        { from: 22, to: 3 }, // Coursera
+        { from: 23, to: 3 }, // Udemy
+        { from: 23, to: 2 }, // Read.cv
+        { from: 23, to: 4 },
+        { from: 23, to: 5 },
+        { from: 25, to: 2 }, // LinkedIn
+        { from: 25, to: 4 },
+        { from: 25, to: 5 }
       ])
     }
   },
