@@ -58,6 +58,7 @@ export default {
           label: 'Entertainment',
           color: { background: colourCategory, border: colourCategory }
         },
+        { id: 17, label: 'Discord' },
         { id: 18, label: 'Signal' },
         { id: 19, label: 'StackOverflow' }
       ]),
@@ -82,7 +83,11 @@ export default {
         { from: 10, to: 3 },
         { from: 18, to: 4 },
         { from: 19, to: 5 },
-        { from: 19, to: 3 }
+        { from: 19, to: 3 },
+        { from: 17, to: 2 },
+        { from: 17, to: 3 },
+        { from: 17, to: 4 },
+        { from: 17, to: 16 }
       ])
     }
   },
