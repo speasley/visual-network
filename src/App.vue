@@ -60,34 +60,37 @@ export default {
         },
         { id: 17, label: 'Discord' },
         { id: 18, label: 'Signal' },
-        { id: 19, label: 'StackOverflow' }
+        { id: 19, label: 'StackOverflow' },
+        { id: 20, label: 'Royal Roads University' }
       ]),
       edges: new DataSet([
-        { from: 1, to: 2 }, // top-level edges
-        { from: 1, to: 3 },
-        { from: 1, to: 4 },
-        { from: 1, to: 5 },
-        { from: 6, to: 2 }, // social media
-        { from: 7, to: 2 },
-        { from: 8, to: 2 },
-        { from: 9, to: 2 },
-        { from: 12, to: 2 },
-        { from: 13, to: 2 },
-        { from: 15, to: 2 },
-        { from: 1, to: 16 }, // entertainment
+        { from: 1, to: 2 }, // social media
         { from: 1, to: 3 }, // education
-        { from: 14, to: 16 },
-        { from: 14, to: 3 },
-        { from: 11, to: 4 },
-        { from: 10, to: 16 },
+        { from: 1, to: 4 }, // communication
+        { from: 1, to: 5 }, // work
+        { from: 1, to: 16 }, // entertainment
+        { from: 6, to: 2 }, // posts
+        { from: 7, to: 2 }, // reddit
+        { from: 7, to: 16 },
+        { from: 8, to: 2 }, // spotify
+        { from: 9, to: 2 }, // instagram
+        { from: 10, to: 16 }, // wikipedia
         { from: 10, to: 3 },
-        { from: 18, to: 4 },
-        { from: 19, to: 5 },
-        { from: 19, to: 3 },
-        { from: 17, to: 2 },
+        { from: 11, to: 4 }, // email
+        { from: 12, to: 2 }, // facebook
+        { from: 12, to: 4 },
+        { from: 13, to: 2 }, // twitter
+        { from: 15, to: 2 }, // bluesky
+        { from: 14, to: 16 }, // YouTube
+        { from: 14, to: 3 },
+        { from: 17, to: 2 }, // discord
         { from: 17, to: 3 },
         { from: 17, to: 4 },
-        { from: 17, to: 16 }
+        { from: 17, to: 16 },
+        { from: 18, to: 4 }, // signal
+        { from: 19, to: 5 }, // StackOverflow
+        { from: 19, to: 3 },
+        { from: 20, to: 3 } // RRU
       ])
     }
   },
