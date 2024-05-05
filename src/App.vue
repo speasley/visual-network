@@ -92,7 +92,7 @@ export default {
         { from: 7, to: 16 },
         { from: 8, to: 2 }, // spotify
         { from: 9, to: 2 }, // instagram
-        { from: 9, to: 16 }, // instagram
+        { from: 9, to: 16 },
         { from: 10, to: 16 }, // wikipedia
         { from: 10, to: 3 },
         { from: 11, to: 4 }, // email
