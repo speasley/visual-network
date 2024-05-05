@@ -159,7 +159,7 @@ export default {
 
 <style scoped>
 .network-container {
-  height: 350px;
+  height: 500px;
   width: 100%;
 }
 </style>
