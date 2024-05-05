@@ -5,6 +5,7 @@ import spImage from '@/assets/sp.png'
 export default {
   name: 'App',
   data() {
+    const colourCategory = '#ee6352'
     return {
       nodes: new DataSet([
         {
@@ -26,16 +27,64 @@ export default {
             }
           }
         },
-        { id: 2, label: 'Node 2' },
-        { id: 3, label: 'Node 3' },
-        { id: 4, label: 'Node 4' },
-        { id: 5, label: 'Node 5' }
+        {
+          id: 2,
+          label: 'Social Media',
+          color: { background: colourCategory, border: colourCategory }
+        },
+        {
+          id: 3,
+          label: 'Education',
+          color: { background: colourCategory, border: colourCategory }
+        },
+        {
+          id: 4,
+          label: 'Communication',
+          color: { background: colourCategory, border: colourCategory }
+        },
+        { id: 5, label: 'Work', color: { background: colourCategory, border: colourCategory } },
+        { id: 6, label: 'Posts' },
+        { id: 7, label: 'Reddit' },
+        { id: 8, label: 'Spotify' },
+        { id: 9, label: 'Instagram' },
+        { id: 10, label: 'Wikipedia' },
+        { id: 11, label: 'Email' },
+        { id: 12, label: 'Facebook' },
+        { id: 13, label: 'Twitter/X' },
+        { id: 14, label: 'YouTube' },
+        { id: 15, label: 'Bluesky' },
+        {
+          id: 16,
+          label: 'Entertainment',
+          color: { background: colourCategory, border: colourCategory }
+        },
+        {
+          id: 17,
+          label: 'Education',
+          color: { background: colourCategory, border: colourCategory }
+        },
+        { id: 18, label: 'Signal' }
       ]),
       edges: new DataSet([
+        { from: 1, to: 2 }, // top-level edges
         { from: 1, to: 3 },
-        { from: 1, to: 2 },
-        { from: 2, to: 4 },
-        { from: 2, to: 5 }
+        { from: 1, to: 4 },
+        { from: 1, to: 5 },
+        { from: 6, to: 2 }, // social media
+        { from: 7, to: 2 },
+        { from: 8, to: 2 },
+        { from: 9, to: 2 },
+        { from: 12, to: 2 },
+        { from: 13, to: 2 },
+        { from: 15, to: 2 },
+        { from: 1, to: 16 }, // entertainment
+        { from: 1, to: 17 }, // education
+        { from: 14, to: 16 },
+        { from: 14, to: 17 },
+        { from: 11, to: 4 },
+        { from: 10, to: 16 },
+        { from: 10, to: 17 },
+        { from: 18, to: 4 }
       ])
     }
   },
@@ -75,16 +124,7 @@ export default {
 </template>
 
 <style scoped>
-/*
-  5d90b6
-  3f784c
-  7ae7c7
-  ee6352
-  05299e
-*/
 .network-container {
-  --accent: #5d90b6;
-  --highlight: #f8f991;
   height: 350px;
   width: 100%;
 }
