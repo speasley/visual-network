@@ -77,7 +77,9 @@ export default {
         { id: 22, label: 'Coursera' },
         { id: 23, label: 'Udemy' },
         { id: 24, label: 'Read.cv' },
-        { id: 25, label: 'LinkedIn' }
+        { id: 25, label: 'LinkedIn' },
+        { id: 26, label: 'MS Teams' },
+        { id: 27, label: 'SAIT' }
       ]),
       edges: new DataSet([
         { from: 1, to: 2 }, // social media
@@ -115,7 +117,9 @@ export default {
         { from: 24, to: 5 },
         { from: 25, to: 2 }, // LinkedIn
         { from: 25, to: 4 },
-        { from: 25, to: 5 }
+        { from: 25, to: 5 },
+        { from: 26, to: 5 }, // Teams
+        { from: 27, to: 5 } // SAIT
       ])
     }
   },
