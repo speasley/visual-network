@@ -11,13 +11,19 @@ export default {
           id: 1,
           label: 'Stephen',
           shape: 'circularImage',
-          borderWidth: 3,
           image: spImage,
           shapeProperties: {
-            useBorderWithImage: true
+            useBorderWithImage: false
           },
           font: {
+            background: '#ffffff',
             color: '#000000'
+          },
+          chosen: {
+            node: function (values, id, selected, hovering) {
+              values.borderColor = selected ? '#7ae7c7' : '#2b7ce9'
+              values.borderWidth = selected ? 6 : 3
+            }
           }
         },
         { id: 2, label: 'Node 2' },
@@ -39,18 +45,19 @@ export default {
       nodes: this.nodes,
       edges: this.edges
     }
-    const options = {
+    new Network(container, data, {
       nodes: {
+        borderWidth: 3,
         color: {
           border: '#5d90b6',
           background: '#5d90b6'
         },
         font: {
-          color: '#ffffff',
-          bold: {
-            color: '#ffffff',
-            vadjust: 0,
-            mod: 'bold'
+          color: '#ffffff'
+        },
+        chosen: {
+          node: function (values, id, selected, hovering) {
+            values.borderColor = selected ? '#7ae7c7' : '#2b7ce9'
           }
         }
       },
@@ -58,8 +65,7 @@ export default {
         color: '#7ae7c7',
         width: 2
       }
-    }
-    new Network(container, data, options)
+    })
   }
 }
 </script>
