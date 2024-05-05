@@ -120,7 +120,7 @@ export default {
         { from: 25, to: 4 },
         { from: 25, to: 5 },
         { from: 26, to: 5 }, // Teams
-        { from: 27, to: 5 } // SAIT
+        { from: 27, to: 5 }, // SAIT
         { from: 27, to: 3 }
       ])
     }
