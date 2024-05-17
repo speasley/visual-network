@@ -79,7 +79,8 @@ export default {
         { id: 24, label: 'Read.cv' },
         { id: 25, label: 'LinkedIn' },
         { id: 26, label: 'MS Teams' },
-        { id: 27, label: 'SAIT' }
+        { id: 27, label: 'SAIT' },
+        { id: 28, label: 'Letterboxd' }
       ]),
       edges: new DataSet([
         { from: 1, to: 2 }, // social media
@@ -121,7 +122,8 @@ export default {
         { from: 25, to: 5 },
         { from: 26, to: 5 }, // Teams
         { from: 27, to: 5 }, // SAIT
-        { from: 27, to: 3 }
+        { from: 27, to: 3 },
+        { from: 28, to: 2 } // Letterboxd
       ])
     }
   },
